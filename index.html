@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Movie App</title>
+</head>
+<style>
+    @media(min-width:526px){
+        .main-body{
+        display: none;
+    }
+    }
+  
+</style>
+<body class="bg-gray-900 main-body">
+
+    <!-- User info -->
+    <div class="m-5">
+        <p class="font-bold text-white text-xl">Hello <span class="font-light">Sagar!</span></p>
+        <p class="text-gray-400">Watch your favourite movie</p>
+    </div>
+
+    <!-- Search bar -->
+    <div class="m-5 flex items-center justify-center">
+        <input type="search" placeholder="Search"
+            class="bg-gray-800 rounded-tl-md rounded-bl-md p-2 w-full placeholder-gray-400">
+        <i class="fa fa-search bg-gray-800 p-3 rounded-tr-md rounded-br-md text-gray-400 font-medium"></i>
+    </div>
+
+    <!-- Catergory -->
+    <div class="flex  m-5 justify-center flex-col">
+        <!--Catergory see all  -->
+        <div class="flex justify-between  items-center ">
+            <p class="text-white font-medium text-lg">Catergory</p>
+            <p class="font-medium text-yellow-600">See all <i class="fas fa-arrow-right"></i></p>
+
+
+        </div>
+<!-- All Category -->
+        <div class="flex justify-around">
+            <!-- Romance -->
+            <div class="mt-5">
+                <div class="text-3xl rounded-lg shadow-lg bg-gray-800 w-14 flex justify-center items-center h-14">
+                    😍
+                </div>
+                <p class="text-white font-medium text-sm tracking-wider">Romance</p>
+            </div>
+
+            <!-- Comedy -->
+            <div class="mt-5">
+                <div class="text-3xl rounded-lg shadow-lg bg-gray-800 w-14 flex justify-center items-center h-14">
+                    😂
+                </div>
+                <p class="text-white font-medium text-sm tracking-wider">Comedy</p>
+            </div>
+
+            <!-- Action -->
+            <div class="mt-5">
+                <div class="text-3xl rounded-lg shadow-lg bg-gray-800 w-14 flex justify-center items-center h-14">
+                    😎
+                </div>
+                <p class="text-white font-medium text-sm tracking-wider">Action</p>
+            </div>
+
+            <!-- Horror-->
+            <div class="mt-5">
+                <div class="text-3xl rounded-lg shadow-lg bg-gray-800 w-14 flex justify-center items-center h-14">
+                    😱
+                </div>
+                <p class="text-white font-medium text-sm tracking-wider">Horror</p>
+            </div>
+        </div>
+
+    </div>
+   
+     <!-- Feature Movie -->
+     <div class="">
+         <p class="text-white text-lg font-medium mx-5">Feature<span class="font-light">
+            Movie
+         </span> </p>
+     </div>
+     <div class="inline-flex overflow-x-scroll mb-10">
+         
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/aa/Annaatthe_poster.jpg " class="bg-gray-800 w-40 h-64 m-2 rounded  rounded shadow-2xl" onclick="openAnnathe()">
+        <img src="https://cdn.cinematerial.com/p/297x/jwqwceyo/american-factory-movie-poster-md.jpg?v=1565930430" class="bg-gray-800 w-40 h-64 m-2 rounded  rounded shadow-2xl" onclick="openAmerica()" >
+        <img src="https://i0.wp.com/teaser-trailer.com/wp-content/uploads/After-film-poster.jpg?ssl=1" class="bg-gray-800 w-40 h-64 m-2 rounded shadow-2xl" onclick="openAfter()">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Kabir_Singh.jpg/220px-Kabir_Singh.jpg" class="bg-gray-800 w-40 h-64 m-2 rounded shadow-2xl" onclick="openKabir()">
+    </div> 
+
+     <!-- Navbar -->
+     <div class=" bg-gray-800 flex justify-around p-3 fixed  bottom-0 w-full">
+<i class="fa fa-home text-white"></i>
+<i class="far fa-play-circle text-gray-600"></i>
+<i class="far fa-bookmark text-gray-600"></i>
+<i class="far fa-user text-gray-600"></i>
+
+     </div>
+
+
+
+
+<script>
+   const  openAmerica=()=>{
+window.location.href="american.html"
+    };
+    const  openAnnathe=()=>{
+window.location.href="anathe.html"
+    }
+    const  openKabir=()=>{
+window.location.href="kabir.html"
+    }
+    const  openAfter=()=>{
+window.location.href="after.html"
+    }
+</script>     
+</body>
+
+</html>
